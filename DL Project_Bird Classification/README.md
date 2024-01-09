@@ -151,13 +151,15 @@ step_lr_scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=5, gamm
 ### 3. model.pth
 2번의 코드를 바탕으로 학습을 완료한 모델을 저장한 파일
 
-<br>
+<br> 
 
-### 4. try
+### 4. try : 최종 파일 이전의 시도와 정확도를 표시
 1. 65 : train data를 로드할 때 랜덤하게 변형하는 방식을 사용, EfficientNet을 사용, lr=0.0001을 사용
 2. 75 : train data를 그대로 로드, resnet을 사용, lr=0.00001로 감소 시킴으로써 성능의 향상을 확인
 3. 80 : train data를 그대로 로드, EfficientNet을 사용, lr=0.00005 --> EfficientNet과 lr 조절로 성능 향상
 4. 88 : Data_Augmentation 코드로 데이터셋 크기를 증가시킴, but valid에도 augmented가 포함되는 문제 발생
+
+<br>
 
 ## 생각해볼 점 & 배운 점
 - Data Augmentation을 많이 한다고 성능이 높아지는 것 같지는 않다. 원본 데이터의 50%, 100%, 300%를 시도했는데 큰 성능 차이는 없었던 것 같다
