@@ -57,7 +57,7 @@ https://www.kaggle.com/datasets/hongsean/korea-income-and-welfare
 
 - 4. marriage, religion, family_member에 섞인 99, 0과 같은 이상치를 적절히 처리한다
 
-- 5. income을 IQR로 outlier를 처리하고 박스 플롯을 그려본 후 음수는 제거하고 income의 분포가 left-skewed하기 때문에 log변환을 통해 정규 분포의 형태로 바꿔준다
+- 5. income을 IQR로 outlier를 처리하고 박스 플롯을 그려본 후 음수는 제거하고 income의 분포가 right-skewed하기 때문에 log변환을 통해 정규 분포의 형태로 바꿔준다
 <img width=800 src="https://github.com/namkidong98/Sogang-Parrot_2023-02/assets/113520117/91f77a90-5c4b-4cca-a3b3-d784343e5ac6">
 <img width=800 src="https://github.com/namkidong98/Sogang-Parrot_2023-02/assets/113520117/88193a2e-7442-4805-8ea8-0a1afc6fd72d">
 
